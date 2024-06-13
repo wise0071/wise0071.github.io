@@ -1,3 +1,41 @@
 body {
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace
+}
+
+header, footer{
+    background-color: #333333;
+}
+
+.site-title {
+    color: #726DA8;
+}
+
+*{background-color: #333333;}
+
+#my-image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px 1px #000000;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li:nth-child(odd) {
+    background: #726DA8;
+    max-width: min-content;
+  }
+  
+
+h1 a {
+    text-decoration: none;
+    background-color: #726DA8;
+    border-style: dashed;
     
+}
+
+h1 a:hover {
+        background-color: #688B58;
 }
