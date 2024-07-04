@@ -51,6 +51,13 @@ html {
     font-size: 16px;
 } 
 
+body {
+    background-color: #aad4cf;
+}
+
+.wrapper {
+    background-color: #d4e9e7;
+}
 
 .wrapper {
     margin: 0 auto;
@@ -72,13 +79,30 @@ html {
 .topnav {
     background-color:#d4e9e7;
     overflow: hidden;
+    text-align: center;
+
 }
 
 .topnav a {
-    float: left;
     color: #000000;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 1rem 4rem;
     text-decoration: none;
     font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.starfishsq {
+    width: 17rem;
+    float: left;
+    padding: 1rem
+}
+
+h3 {
+    font-size: 1.1rem;
+    padding: 1rem;
 }
