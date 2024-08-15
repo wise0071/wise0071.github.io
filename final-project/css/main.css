@@ -1,0 +1,200 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* main colors */
+:root {
+    --primary-color: #c78c06;
+    --secondary-color: #ffe6ac;
+    --dark-color: #222;
+    --light-color: white;
+    --max-width: 1200px;
+}
+
+/* general style */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.search-bar button {
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+section#banner {
+    text-align: center;
+    color: var(--light-color);
+    position: relative;
+}
+
+section#banner img {
+    width: 100%;
+    height: auto;
+}
+
+section#banner h1, section#banner p, section#banner button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section#banner h1 {
+    top: 20%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+}
+
+section#banner p {
+    top: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    width: 80%;
+}
+
+section#banner button {
+    top: 60%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+section#about {
+    background-color: var(--secondary-color);
+}
+
+section#services .service {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#services .service img {
+    width: 100%;
+    height: auto;
+}
+
+section#services .service-info {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+}
+
+section#vision {
+    text-align: center;
+    background-color: var(--light-color);
+}
+
+section#team .team-member {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#contact input, section#contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+section#contact button {
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    cursor: pointer;
+}
+
+section#hours, section#location {
+    padding: 2rem;
+    background-color: var(--light-color);
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media (min-width: 760px) {
+    nav ul {
+        gap: 2rem;
+    }
+
+    section#banner h1 {
+        font-size: 3rem;
+    }
+
+    section#banner p {
+        font-size: 1.5rem;
+        width: 50%;
+    }
+
+    section#services .service {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    section#team .team-member {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
